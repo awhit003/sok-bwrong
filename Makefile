@@ -1,4 +1,4 @@
-SUITES = movetest
+SUITES = movetest walltest1 walltest2 walltest3
 
 .PHONY: all simulator device clean $(SUITES)
 
@@ -15,14 +15,14 @@ simulator:
 		echo "=== Building $$suite (Simulator) ==="; \
 		$(MAKE) -C src/$$suite simulator || exit 1; \
 	done
-	@echo "\n=== Simulator package built! ==="
+	@echo "\n=== Simulator packages built! ==="
 
 device:
 	@for suite in $(SUITES); do \
 		echo "=== Building $$suite (Device) ==="; \
 		$(MAKE) -C src/$$suite device || exit 1; \
 	done
-	@echo "\n=== Device package built! ==="
+	@echo "\n=== Device packages built! ==="
 
 clean:
 	@for suite in $(SUITES); do \
