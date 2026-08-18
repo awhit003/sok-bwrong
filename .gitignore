@@ -1,0 +1,15 @@
+# Build artifacts & PDX packages
+*.pdx
+*.pdx.zip
+*.dylib
+*.so
+*.o
+*.elf
+*.bin
+*.map
+*.lst
+build/
+builds/
+
+# macOS metadata
+.DS_Store
