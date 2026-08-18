@@ -1,34 +1,53 @@
-# Build artifacts & PDX packages
+# Build artifacts & Playdate packages
 *.pdx
 *.pdx.zip
 *.dylib
 *.so
+*.dll
 *.o
+*.obj
 *.elf
 *.bin
 *.map
 *.lst
 build/
 builds/
+bin/
 
-# macOS metadata & editor files
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeScripts/
+Testing/
+
+# Local design & reference docs
+GAME_DESIGN_DOCUMENT.md
+INSPIRATIONS_QUASI_GDD.md
+*.pdf
+
+# AI & Assistant metadata / local instructions
+GEMINI.md
+gemini.md
+CLAUDE.md
+AGENTS.md
+.gemini*
+.agents*
+.claude*
+.copilot*
+.cursor*
+
+# Editor & OS metadata
 .DS_Store
+.DS_Store?
 .AppleDouble
 .LSOverride
 ._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+*.swp
+*.swo
+*~
 .vscode/
 .idea/
-*.swp
-*~
-
-# AI / Automation agent configs & logs
-.gemini/
-.gemini*
-.agents/
-.agents*
-GEMINI.md
-CLAUDE.md
-AGENTS.md
-.cursor*
-.claude*
-.copilot*
