@@ -1,0 +1,6 @@
+name=doodtest10
+author=awhit003
+description=Playdate 10x10 tile test suite
+bundleID=com.awhit003.doodtest10
+version=1.0.0
+buildNumber=1

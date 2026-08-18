@@ -1,0 +1,6 @@
+name=doodtest40
+author=awhit003
+description=Playdate 40x40 tile test suite
+bundleID=com.awhit003.doodtest40
+version=1.0.0
+buildNumber=1

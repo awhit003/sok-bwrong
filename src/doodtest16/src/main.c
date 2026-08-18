@@ -6,6 +6,10 @@
 
 static PlaydateAPI* pd = NULL;
 
+static const LCDPattern kColorCheckerboard = LCDOpaquePattern(
+    0xaa, 0x55, 0xaa, 0x55, 0xaa, 0x55, 0xaa, 0x55
+);
+
 static int update(void* userdata) {
     pd->graphics->clear(kColorWhite);
 
