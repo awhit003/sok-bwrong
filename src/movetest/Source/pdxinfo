@@ -1,0 +1,6 @@
+name=movetest
+author=awhit003
+description=Playdate 20x20 movement test suite
+bundleID=com.awhit003.movetest
+version=1.0.0
+buildNumber=1

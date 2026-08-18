@@ -1,4 +1,4 @@
-SUITES = doodtest8 doodtest10 doodtest16 doodtest20 doodtest40
+SUITES = movetest
 
 .PHONY: all simulator device clean $(SUITES)
 
@@ -8,21 +8,21 @@ all:
 		$(MAKE) -C src/$$suite device || exit 1; \
 		$(MAKE) -C src/$$suite simulator || exit 1; \
 	done
-	@echo "\n=== All 5 test suites built successfully! ==="
+	@echo "\n=== All suites built successfully! ==="
 
 simulator:
 	@for suite in $(SUITES); do \
 		echo "=== Building $$suite (Simulator) ==="; \
 		$(MAKE) -C src/$$suite simulator || exit 1; \
 	done
-	@echo "\n=== All 5 simulator packages built! ==="
+	@echo "\n=== Simulator package built! ==="
 
 device:
 	@for suite in $(SUITES); do \
 		echo "=== Building $$suite (Device) ==="; \
 		$(MAKE) -C src/$$suite device || exit 1; \
 	done
-	@echo "\n=== All 5 device packages built! ==="
+	@echo "\n=== Device package built! ==="
 
 clean:
 	@for suite in $(SUITES); do \
