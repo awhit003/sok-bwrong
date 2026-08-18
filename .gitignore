@@ -11,5 +11,24 @@
 build/
 builds/
 
-# macOS metadata
+# macOS metadata & editor files
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.vscode/
+.idea/
+*.swp
+*~
+
+# AI / Automation agent configs & logs
+.gemini/
+.gemini*
+.agents/
+.agents*
+GEMINI.md
+CLAUDE.md
+AGENTS.md
+.cursor*
+.claude*
+.copilot*
